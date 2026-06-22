@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://tiangolo.com">
-  <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/2c13c12d-b574-4b78-94b4-2f054bae5a28" />
+  <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/2c13c12d-b574-4b78-94b4-2f054bae5a28" alt="FastApi Logo" />
   </a>
 </p>
 
-# 🚀 My Awesome FastAPI Project
+# 🚀 My Awesome FastAPI Project 
 
 A high-performance, production-ready REST API built with Python and FastAPI.
 
