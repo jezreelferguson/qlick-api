@@ -14,31 +14,6 @@ router = APIRouter(
     tags=["Authentication"]
 )
 
-
-@router.post("/signup")
-def signup(
-    user: UserCreate,
-    db: Session = Depends(get_db)
-):
-    new_user = create_user(
-        db,
-        user.name,
-        user.email,
-        user.password
-    )
-
-    if not new_user:
-        raise HTTPException(
-            status_code=400,
-            detail="Email already exists"
-        )
-
-    return {
-        "message": "User created successfully",
-        "code" : 201
-    }
-
-
 @router.post("/signin")
 def signin(
     user: UserLogin,
@@ -61,8 +36,12 @@ def signin(
     )
 
     return {
-        "data" : user,
-        "code" : 200,
+        "message": "Signed In Successfully",
+        "data": {
+            "name": authenticated_user.name,
+            "email": authenticated_user.email
+        },
+        "code": 200,
         "access_token": token,
         "token_type": "bearer"
     }
