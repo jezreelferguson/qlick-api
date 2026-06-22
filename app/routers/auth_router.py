@@ -14,6 +14,21 @@ router = APIRouter(
     tags=["Authentication"]
 )
 
+@router.post("/signup")
+def signup(user: UserCreate, db: Session = Depends(get_db)):
+
+    new_user = create_user(
+        db,
+        user.name,
+        user.email,
+        user.password
+    )
+
+    if not new_user:
+        raise HTTPException(400, "Email already exists")
+
+    return {"message": "User created successfully"}
+
 @router.post("/signin")
 def signin(
     user: UserLogin,
