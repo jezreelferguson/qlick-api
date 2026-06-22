@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://tiangolo.com"><img src="https://tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo" width="400"></a>
+</p>
+
 # 🚀 My Awesome FastAPI Project
 
 A high-performance, production-ready REST API built with Python and FastAPI.
@@ -54,8 +58,8 @@ fastapi dev main.py
 
 Once the server is running, you can access the interactive documentation pages:
 
-* **Swagger UI Docs**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) (Interactive endpoint testing)
-* **ReDoc**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc) (Clean, structured data model specs)
+* **Swagger UI Docs**: [http://127.0.0](http://127.0.0) (Interactive endpoint testing)
+* **ReDoc**: [http://127.0.0](http://127.0.0) (Clean, structured data model specs)
 
 ---
 
